@@ -6,44 +6,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container logo-nav-container">
+            <span class="menu-icon"><i class="fas fa-bars"></i></span>
             <nav class="navigation">
                 <ul>
-                    <li><a><b>Home</b></a></li>
-                    <li><a><b>About US</b></a></li>
-                    <li><a><b>Sectors</b></a></li>
-                    <li><a><b>Contact</b></a></li>
+                    <li><a><b>Inicio</b></a></li>
+                    <li><a><b>Sobre Mi</b></a></li>
+                    <li><a><b>Trabajos</b></a></li>
+                    <li><a><b>Contacto</b></a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!--Contáctanos-->
-    <div class="box-contactanos">
-        <h2>Contáctanos</h2>
-        <hr>
-        <p>Si desea mayor información, con gusto le serviremos.
-            Por favor contáctenos directamente o déjenos sus datos mediante el formulario. </p>
-        <div class="grid-container-contactanos">
-            <div>
-                <p><b>Dirección matriz:</b><br>Av. Orellana E9-195 y Av. 6 de Diciembre, Quito – Ecuador</p>
-            </div>
-            <div>
-                <p><b>Presencia en</b><br>Ecuador – Argentina – Colombia - Perú – Paraguay – USA</p>
-            </div>
-            <div>
-                <p><b>Teléfono</b><br>0999676559<br> 099-820-9731</p>
-            </div>
-            <div>
-                <p><b>Email</b><br>contacto@altioracorp.com</p>
+    <!--banner-->
+    <div class="banner">
+        <p>Hola, me llamo Santiago, tengo 22 años,<br> soy Analista en Sistemas recien graduado, cursando para ser
+            Ingeniero
+            en
+            Sistemas. <br>
+            Actualmente buscando proyectos relacionados con la tecnologia,contabilidad o administrativos para seguir
+            creciendo.
+        </p>
+    </div>
+
+    <!--Sobre mi-->
+    <div class="gridPrevios">
+        <div>
+            <img src="https://altioracorp.com/wp-content/uploads/2020/11/2.png" width="100" height="50">
+        </div>
+        <div>
+            <h2>Conocimientos/Experiencia</h2>
+            <hr>
+            <!--marcas-->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="https://altioracorp.com/wp-content/uploads/2020/11/2.png" />
+                    </div>
+                    <div class="swiper-slide"><img src="https://altioracorp.com/wp-content/uploads/2020/11/2.png" />
+                    </div>
+                    <div class="swiper-slide"><img src="https://altioracorp.com/wp-content/uploads/2020/11/2.png" />
+                    </div>
+                    <div class="swiper-slide"><img src="https://altioracorp.com/wp-content/uploads/2020/11/2.png" />
+                    </div>
+                    <div class="swiper-slide"><img src="https://altioracorp.com/wp-content/uploads/2020/11/2.png" />
+                    </div>
+                    <div class="swiper-slide"><img src="https://altioracorp.com/wp-content/uploads/2020/11/2.png" />
+                    </div>
+                    <div class="swiper-slide"><img src="https://altioracorp.com/wp-content/uploads/2020/11/2.png" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>
+
+    <!--Enfocados -->
+    <div class="grid-container">
+        <div class="item1">
+            <h2>Proyectos</h2>
+            <hr>
+            <p>Estos son algunos proyectos que estan en produccion</p>
+        </div>
+        <div class="itemmin">
+            <h4>Business Solutions (ERP – CRM):</h4>
+            <p>Microsoft Dynamics es la suite de productos enfocados en facilitar los procesos empresariales,
+                integrando las funcionalidades de ERP y CRM.</p>
+            <div><a class="btn">Ver Video</a>
+
+            </div>
+        </div>
+
+        <div class="itemmin1">
+            <h4>Cloud Computing – ERP Cloud:</h4>
+            <p>Microsoft Azure te permite administrar tu infraestructura,
+                aplicaciones e información de la manera más práctica y al mejor costo de las nubes world class.</p>
+            <div><a id="btn2" class="btn">Ver Video</a>
+
+            </div>
+        </div>
+        <div class="itemmin2">
+            <h4>Productividad – Teletrabajo:</h4>
+            <p>Diseñado para ayudarte a mejorar la productividad con aplicaciones innovadoras de Office,
+                servicios inteligentes en la nube y seguridad de primer nivel. OneDrive, SharePoint, Teams, Outlook.
+                Office 365 es ahora Microsoft 365.</p>
+            <div><a id="btn3" class="btn">Ver Video</a>
+            </div>
+        </div>
+        <div class="itemmin3">
+            <h4>Power Platform:</h4>
+            <p>Colabore y trabaje en equipo para abordar de forma eficaz los nuevos desafíos con Microsoft Power
+                Platform: analice los datos, cree soluciones, automatice procesos y desarrolle agentes virtuales.</p>
+            <div><a id="btn4" class="btn">Ver Video</a>
+
+            </div>
+        </div>
+    </div>
+
     <!--whatsapp-->
     <a href="https://api.whatsapp.com/send?phone=+541169197081" class="btn-wsp">
         <i class="fab fa-whatsapp"></i>
@@ -52,9 +117,38 @@
     <!--footer-->
     <footer>
         <div>
-            <p><b>© Altioracorp 2021.</b> 099-967-6559 contacto@altioracorp.com</p>
+            <p><b>© SantiagoHerrera 2021.</b></p>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                "@0.00": {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                "@0.75": {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                "@1.00": {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                "@1.50": {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+        });</script>
 
 </body>
 
