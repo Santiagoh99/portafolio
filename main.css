@@ -181,16 +181,11 @@ body{
  .gridconocimiento {
     display: grid;
     grid-template-columns: 12% 12% 12% 12% 12%;
-    grid-auto-rows: minmax(10px, 140px);
+    grid-auto-rows: minmax(10px, 150px);
     justify-content: center;
     text-align: center;
     background: rgb(219, 219, 219);
    }
-        .gridconocimiento img{
-            width: 85px;
-            height: 100px;
-            padding-top: 10px;
-        }
 /*--------------------grid 1----------------------*/
 .grid-container {
     display: grid;
@@ -323,7 +318,7 @@ body{
         padding-top: 100px;
     }
     .grid-container-contact  i{
-        font-size: 40px;
+        font-size: 50px;
         padding-top: 10px;
         margin: 10px auto;
         color: rgb(41, 149, 250);
