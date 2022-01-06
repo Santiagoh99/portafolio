@@ -10,19 +10,22 @@ body{
 }
 /*--------------------header----------------------*/
 .header{
-    background: white;
+    background: black;
     position: fixed;
     width: 100%;
     z-index: 10000;
     margin: 0 auto;
-    -webkit-box-shadow: -6px 7px 59px -15px rgba(0,0,0,0.75);
-    -moz-box-shadow: -6px 7px 59px -15px rgba(0,0,0,0.75);
-    box-shadow: -6px 7px 59px -15px rgba(0,0,0,0.75);
+    height: 3%;
+    padding: 0.7rem 0; 
+    text-align: center;
+    -webkit-box-shadow: 0px 26px 39px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 26px 39px -16px rgba(0,0,0,0.75);
+    box-shadow: 0px 26px 39px -16px rgba(0,0,0,0.75);
 }
      .header a{
-       color:rgb(20, 20, 20) ;
+       color: rgb(175, 175, 175);
        text-decoration: none ;
-       font-size: 13px ;
+       font-size: 16px ;
     }
 		header.major p {
 			margin: 0.1em 0 0 0;
@@ -42,7 +45,6 @@ body{
           padding: 5px;
           transition: all 0.5s linear;
           display: block;
-          font-family: 'Open sans';
         }
            .navigation li a:hover{
             color: rgb(56, 124, 250);
@@ -92,86 +94,242 @@ body{
             padding: 0.1rem 3rem ;
         }
 }
- /*--------------------banner----------------------*/
-.banner{
-	height: 600px;
-	animation: banner 8s infinite linear alternate;
-	background-size: 100% 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    margin: 0 auto;
+ /*--------------------sobremi----------------------*/
+.gridsobremi {
+    display: grid;
+    grid-template-columns:25% 25%;
+    grid-auto-rows: minmax(10px, 300px);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 1px 9px 1px;
+    -webkit-box-shadow: 0px 26px 39px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 26px 39px -16px rgba(0,0,0,0.75);
+    box-shadow: 0px 26px 39px -16px rgba(0,0,0,0.75);
 }
-     @keyframes banner{
-     	0%, 50%{
-     		background-image: url("/img10.gif");
-         }
-     	51%, 100%{
-     		background-image: url("/img10.gif");
-     	}
+     .gridsobremi img{
+        clip-path: circle(48% at 48% 50%);
+    }
+    .gridsobremi h2{
+        font-size: 20px;
+        text-align: center;
+        color: rgb(175, 175, 175);
     }
     /*--------------------gridPrevio----------------------*/    
-    .gridPrevios {
-        display: grid;
-        grid-template-columns: 25% 50% ;
-        grid-auto-rows: minmax(10px, 500px);
-        justify-content: center;
-    }
-        .gridPrevios hr{   
-            width: 50px;
-        }
-         .gridPrevios h2{   
-            font-size: 20px;
-             text-align: center;
-         }
-    /*--------------------marca----------------------*/  
-    .swiper {
-        width: 60%;
-        height: 60%;
+    .fondoSomos{
+        background: url(img/img10.gif) no-repeat center center fixed;
+        background-size: 100% !important;
+        height: 400px;
+        overflow: hidden;
+        clip-path: circle(50% at 50% 0);
+        -webkit-box-shadow: 0px 26px 39px -16px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 26px 39px -16px rgba(0,0,0,0.75);
+        box-shadow: 0px 26px 39px -16px rgba(0,0,0,0.75);
       }
-      .swiper-slide img {
-        display: block;
-        width: 50%;
-        height: 50%;
-        object-fit: cover;
-      }  
 
-    /*--------------------grid 1----------------------*/
-    .grid-container {
+    .nosotros {
         display: grid;
-        grid-template-columns: 500px 500px ;
-        grid-template-rows: 200px 200px ;
+        grid-template-columns: 50%;
+        grid-auto-rows: minmax(10px, 100px);
         justify-content: center;
         align-items: center;
+        color: black;
     }
-        .item1{
-            grid-column: 1 / span 2;
-        }
-        .grid-container h2{   
-            font-size: 20px;
-            line-height: 0.3;
-            padding: 10px;
-            text-align: center;
-            align-items: center;
-        }
-        .grid-container h4{   
-            font-size: 18px;
-            line-height: 0.3;
-            text-align: center;
-            align-items: center;
-        }
-        .grid-container hr{   
-            width: 100px;
+        .nosotros hr{   
+            width: 50px;
             border: 0.5px solid blue;
+            margin: 5px auto;
         }
-        .grid-container p{
-            font-size: 12px;
+         .nosotros h2{   
+             font-size: 20px  ;
+             text-align: center;
+             color: white;
+         }
+         .nosotros p{
+            font-size: 13px  ;
             line-height: 1.5;
-            margin: 20px 40px;
-            color: grey;
+             text-align: center;
+             color: white;
+         }
+         .nosotros a{
+            color: rgb(255, 255, 255);
+            background: rgba(10, 82, 238, 0.561);
+            width: 220px;
+            font-size: 17px ;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto;
         }
 
-     
+/*--------------------gridconocimiento----------------------*/  
+.gridconocimientoExp {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-auto-rows: minmax(10px, 120px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(219, 219, 219);
+}
+.gridconocimientoExp hr{   
+    width: 50px;
+    border: 0.5px solid blue;
+    margin: 5px auto;
+}
+ .gridconocimiento {
+    display: grid;
+    grid-template-columns: 12% 12% 12% 12% 12%;
+    grid-auto-rows: minmax(10px, 140px);
+    justify-content: center;
+    text-align: center;
+    background: rgb(219, 219, 219);
+   }
+        .gridconocimiento img{
+            width: 85px;
+            height: 100px;
+            padding-top: 10px;
+        }
+/*--------------------grid 1----------------------*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 400px 400px ;
+    grid-template-rows: 150px ;
+    justify-content: center;
+    align-items: center;
+}
+    .item1{
+        grid-column: 1 / span 2;
+    }
+    .grid-container h2{   
+        font-size: 20px;
+        line-height: 0.3;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+    }
+    .grid-container h4{   
+        font-size: 18px;
+        line-height: 0.3;
+        text-align: center;
+        align-items: center;
+    }
+    .grid-container hr{   
+        width: 100px;
+        border: 0.5px solid blue;
+    }
+    .grid-container p{
+        font-size: 12px;
+        line-height: 1.5;
+        margin: 20px 30px;
+        color: grey;
+        text-align: center;
+    }
+    .grid-container .btn{
+        color: rgb(255, 255, 255);
+        background: rgb(56, 124, 250);
+        width: 90px;
+        font-size: 10px;
+        text-decoration: none;
+        border-radius: 7px;
+        margin: 0 auto;
+        display: block;
+        padding: 5px;
+        align-items: center;
+        text-align: center;
+    }
+
+ /*--------------------contacto----------------------*/
+ .fondo{
+    background: url(img/img1.jpg) no-repeat center center fixed;
+    background-size: 100% !important;
+    height: 500px;
+    overflow: hidden;
+    clip-path: circle(60% at 50% 100%);
+  }
+    .grid-container-contact  {
+        display: grid;
+        grid-template-columns: 30% 30% ;
+        grid-gap: 10px;
+        grid-auto-rows: minmax(10px, 500px);
+        justify-content: center;
+        padding: 9px 1px 1px 1px;
+        color: white;
+    }
+            .grid-container-contact  h4{   
+                font-size: 85% ;
+                line-height: 0.3;
+                text-align: center;
+            }
+            .grid-container-contact  hr{   
+                width: 150px;
+                border: 0.5px solid blue;
+            }
+            
+            .grid-container-contact  p{
+                font-size: 70% ;
+                line-height: 1.5;
+                text-align: center;
+                margin: 20px 50px;
+            }
+            .grid-container-contact iframe{
+                position:absolute;
+                height: 500px;
+                width: 600px;
+                border: 0;
+                }
+    input{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    textarea {
+        width: 100%;
+        height: 150px;
+        margin: 8px 0;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        resize: none;
+      }
+      .grid-container-contact button{
+            color: rgb(255, 255, 255);
+            background: rgb(56, 124, 250);
+            width: 500px;
+            height: 28px;
+            font-size: 70% ;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 0 auto;
+            display: block;
+    }
+    #trucazo{
+        opacity: 0;
+    }
+    .grid-container-contact  h2{   
+        font-size: 85% ;
+        line-height: 0.3;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .grid-container-contact  i{
+        font-size: 40px;
+        padding-top: 10px;
+        margin: 10px auto;
+        color: rgb(41, 149, 250);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
  /*--------------------whatsapp----------------------*/
  .btn-wsp{
      position:fixed;
