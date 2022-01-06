@@ -194,8 +194,8 @@ body{
 /*--------------------grid 1----------------------*/
 .grid-container {
     display: grid;
-    grid-template-columns: 400px 400px ;
-    grid-template-rows: 150px ;
+    grid-template-columns: 450px 450px ;
+    grid-template-rows: 170px ;
     justify-content: center;
     align-items: center;
 }
@@ -204,14 +204,14 @@ body{
     }
     .grid-container h2{   
         font-size: 20px;
-        line-height: 0.3;
+        line-height: 0.4;
         padding: 10px;
         text-align: center;
         align-items: center;
     }
     .grid-container h4{   
         font-size: 18px;
-        line-height: 0.3;
+        line-height: 0.4;
         text-align: center;
         align-items: center;
     }
@@ -238,6 +238,9 @@ body{
         padding: 5px;
         align-items: center;
         text-align: center;
+    }
+ a{
+        text-decoration: none;
     }
 
  /*--------------------contacto----------------------*/
