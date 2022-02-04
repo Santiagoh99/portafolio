@@ -185,27 +185,22 @@ h2{
  .fondo{
     background: url(img/img1.jpg) no-repeat center center fixed;
     background-size: 100% !important;
-    height: 800px;
-    overflow: hidden;
+    height: 550px;
     width: 78.3%;
     float: right;
   }
   .email {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-auto-rows: minmax(10px, 500px);
     justify-content: center;
     align-items: center;
-    color: black;
-    padding-top: 25px;
-    width: 78.3%;
-    float: right;
+    text-align: center;
 }
-.email h4{
-color: white;
-}
-.email p{
-    color: white;
+    .email h4{
+     color: white;
+     text-align: center;
+    }
+    .email p{
+     color: white;
+     text-align: center;
     }
     input{
         width: 50%;
@@ -244,22 +239,22 @@ color: white;
         opacity: 0;
     }
 
- /*--------------------whatsapp----------------------
+ /*--------------------whatsapp----------------------*/
  .btn-wsp{
-     position:fixed;
-     width:60px;
-     height:60px;
-     line-height: 63px;
-     bottom:25px;
-     left:25px;
-     background:#25d366;
-     color:#FFF;
-     border-radius:50px;
-     text-align:center;
-     font-size:40px;
-     box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
-     z-index:100;
-     transition: all 300ms ease;
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:40px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
  }
  .btn-wsp:hover{
      background: #20ba5a;
@@ -270,7 +265,7 @@ color: white;
                 height:53px;
                 line-height: 55px;
             }
-        } */       
+        }        
     /*--------------------footer----------------------
 footer{
     background-color: black;
