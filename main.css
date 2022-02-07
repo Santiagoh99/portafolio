@@ -56,6 +56,36 @@ h2{
     font-size: 30px;
     color: white;
   }
+  @media screen and (max-width: 1200px ) {
+    .header{
+        padding: 1px;
+        width: 100%;
+        height:23%;
+        align-items: center;
+        text-align: center;
+        display: flex;
+    }
+    .header img{
+        width:35%;
+        float: left;
+    }
+    .header h2{
+        font-size: 12px;
+        padding-top: 35px;
+    }
+    .icons {
+        width: 100%;
+      }
+      .icons hr{
+        margin: 3px auto;
+        width: 250px;
+      }
+      .icons a {
+        width:7%;
+        padding-left: 150px;
+        font-size: 15px;
+      }
+    }
     /*--------------------gridPrevio----------------------*/
     .fondoSomos{
         background: url(img/img1.jpg) ;
@@ -101,7 +131,16 @@ h2{
             display: block;
             margin: 0 auto;
         }
-  
+@media screen and (max-width: 1200px ) {
+    .fondoSomos{
+        margin-top: 150px;
+        height: 400px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+      }
+}
 /*--------------------gridconocimiento----------------------*/ 
 .gridconocimientoExp {
     display: grid;
@@ -127,6 +166,14 @@ h2{
     width: 78.3%;
     float: right;
    } 
+   @media screen and (max-width: 1200px ) {
+    .gridconocimientoExp {
+        width: 100%;
+    }
+    .gridconocimiento {
+        width:100%;
+       } 
+   }    
 /*--------------------grid 1----------------------*/
 .grid-container {
     display: grid;
@@ -177,13 +224,25 @@ h2{
         align-items: center;
         text-align: center;
     }
-   a{
+    a{
         text-decoration: none;
     }
-
+    @media all and (max-width: 1200px ) {
+        .grid-container {
+            width: 100%;
+        }
+        .itemmin,.itemmin1,.itemmin2,.itemmin3{
+            grid-column: 1/ span 2;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 350px ;
+            grid-template-rows: 100px  ;
+        }
+    }
  /*--------------------contacto----------------------*/
  .fondo{
-    background: url(img/img1.jpg) no-repeat center center fixed;
+    background: url(img/img1.jpg);
     background-size: 100% !important;
     height: 550px;
     width: 78.3%;
@@ -238,7 +297,11 @@ h2{
     #trucazo{
         opacity: 0;
     }
-
+    @media all and (max-width: 1200px ) {
+        .fondo{
+            width: 100%;
+          }
+    }
  /*--------------------whatsapp----------------------*/
  .btn-wsp{
     position:fixed;
