@@ -269,7 +269,7 @@ h2{
     }
     .grid-container p{
         font-size: 12px;
-        line-height: 1.5;
+        line-height: 1.7;
         margin: 20px 30px;
         color: grey;
         text-align: center;
@@ -327,7 +327,10 @@ h2{
         .grid-container p{
             font-size: 9px;
         }
-
+        .grid-container .btn{
+            width: 50px;
+            font-size: 9px;
+        }
     }
  /*--------------------contacto----------------------*/
  .fondo{
