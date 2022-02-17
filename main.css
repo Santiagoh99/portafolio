@@ -60,7 +60,7 @@ h2{
     .header{
         padding: 1px;
         width: 100%;
-        height:21%;
+        height:200px;
         align-items: center;
         text-align: center;
         display: flex;
@@ -68,9 +68,10 @@ h2{
     .header img{
         width:35%;
         float: left;
+        margin-top: 8px;
     }
     .header h2{
-        font-size: 12px;
+        font-size: 11px;
         padding-top: 35px;
     }
     .icons hr{
@@ -84,11 +85,16 @@ h2{
         line-height: 10px;
     }
     }
+    @media screen and (max-width: 500px ) {
+        .header{
+            height:230px;
+        }
+        }
     /*--------------------gridPrevio----------------------*/
     .fondoSomos{
         background: url(img/img1.jpg) ;
         background-size: 100% !important;
-        height: 450px;
+        height: 350px;
         width: 78.3%;
         float: right;
         top: 0;
@@ -96,7 +102,7 @@ h2{
     .nosotros {
         display: grid;
         grid-template-columns: 50%;
-        grid-auto-rows: minmax(10px, 150px);
+        grid-auto-rows: minmax(10px, 110px);
         justify-content: center;
         align-items: center;
         color: black;
@@ -108,7 +114,7 @@ h2{
             margin: 5px auto;
         }
          .nosotros h2{   
-             font-size: 20px  ;
+             font-size: 20px;
              text-align: center;
              color: white;
          }
@@ -121,7 +127,7 @@ h2{
          .nosotros a{
             color: rgb(255, 255, 255);
             background: rgba(10, 82, 238, 0.561);
-            width: 220px;
+            width: 30%;
             font-size: 17px ;
             text-align: center;
             text-decoration: none;
@@ -147,6 +153,30 @@ h2{
         font-size: 11px;
         line-height: 1.3;
      }
+     .nosotros a{
+        width: 50%;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 500px ) {
+    .fondoSomos{
+        height: 345px;
+        justify-content: center;
+      }
+      .nosotros {
+        grid-template-columns: 70%;
+    }
+      .nosotros h2{   
+        font-size: 14px;
+      }
+      .nosotros p{
+        font-size: 11px;
+        line-height: 1.3;
+     }
+     .nosotros a{
+        width: 50%;
+        font-size: 15px;
+    }
 }
 /*--------------------gridconocimiento----------------------*/ 
 .gridconocimientoExp {
@@ -185,8 +215,8 @@ h2{
         width:100%;
        } 
        .gridconocimiento img{
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
        } 
    }    
 /*--------------------grid 1----------------------*/
@@ -286,13 +316,16 @@ h2{
      color: white;
      text-align: center;
     }
+    .email hr{
+        width: 220px;
+       }
     .email p{
      color: white;
      text-align: center;
     }
     input{
         width: 50%;
-        padding: 12px 20px;
+        padding: 10px 20px;
         margin: 8px 0;
         display: inline-block;
         border: 1px solid #ccc;
@@ -304,7 +337,7 @@ h2{
         width: 50%;
         height: 150px;
         margin: 8px 0;
-        padding: 12px 20px;
+        padding: 10px 20px;
         box-sizing: border-box;
         border: 1px solid #ccc;
         border-radius: 4px;
@@ -315,7 +348,7 @@ h2{
     button{
             color: rgb(255, 255, 255);
             background: rgb(56, 124, 250);
-            width: 500px;
+            width: 50%;
             height: 28px;
             font-size: 70% ;
             text-decoration: none;
@@ -348,9 +381,6 @@ h2{
             textarea {
                 height: 100px;
               }
-            button{
-                    width: 450px;
-            }
     }
  /*--------------------whatsapp----------------------*/
  .btn-wsp{
