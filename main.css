@@ -87,7 +87,7 @@ h2{
    }
 @media screen and (max-width: 500px ) {
         .header{
-            height:210px;
+            height:200px;
         }
     }
     /*--------------------gridPrevio----------------------*/
@@ -168,6 +168,7 @@ h2{
     }
       .nosotros h2{   
         font-size: 14px;
+        margin: 10px auto;
       }
       .nosotros hr{   
         width: 40px;
@@ -178,7 +179,7 @@ h2{
      }
      .nosotros a{
         width: 50%;
-        font-size: 15px;
+        font-size: 13px;
     }
 }
 /*--------------------gridconocimiento----------------------*/ 
