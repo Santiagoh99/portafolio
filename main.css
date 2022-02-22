@@ -355,8 +355,8 @@ h2{
     }
            .video-container .close{
                position: absolute;
-               top: 10%; 
-               right: 50%;
+               top: 18%; 
+               right: 1%;
                font-size: 40px;
                cursor: pointer;
                color: rgb(180, 180, 180);
@@ -365,18 +365,18 @@ h2{
                    pointer-events: all;
                    opacity: 1;
                 }
-         @media all and (max-width: 720px ) {
+         @media all and (max-width: 920px ) {
              iframe{
                  position:absolute;
-                 height: 300px;
-                 width: 450px;
+                 height: 430px;
+                 width: 700px;
                  }
              }
-         @media all and (max-width: 430px ) {
+         @media all and (max-width: 730px ) {
              iframe{
                  position:absolute;
-                 height: 150px;
-                 width: 250px;
+                 height: 250px;
+                 width: 380px;
                  }
              }  
  /*--------------------contacto----------------------*/
